@@ -4,30 +4,29 @@ This README indexes the canonical project management process documents for OctoA
 
 ## Quick summary of OctoAcme project management processes
 
-- Initiation: Validate a proposed project using a One-pager (problem, goal, success metrics) and confirm stakeholders and go/no-go decisions.
-- Planning: Break approved initiatives into a prioritized backlog, estimate scope, identify dependencies and risks, and produce a release/milestone plan.
-- Execution & Tracking: Use a project board, follow PR conventions, run CI/tests, track velocity, and escalate blockers through defined levels.
-- Release & Deployment: Prepare release notes, smoke tests, rollback plans, and follow deployment checklists with post-deploy verification.
-- Retrospective & Continuous Improvement: Run retrospectives after sprints/releases, convert action items into backlog tasks, and measure improvement impact.
+OctoAcme’s project management approach is a structured lifecycle that moves work from idea to delivery and continuous improvement. Initiation focuses on validating the business need, defining the project goal and success metrics, identifying stakeholders, and creating a lightweight one-pager before deciding whether to move forward. Planning then converts that approved idea into an actionable backlog, with scope estimates, milestones, dependencies, risks, and a clear definition of done. Execution and tracking use a project board, pull request conventions, CI validation, and regular team rhythms such as standups, demos, and progress reviews to keep work moving with visibility and accountability. Release and deployment standardize how features move into production with smoke tests, rollback plans, release notes, and post-deploy verification, while retrospectives capture what worked, what should improve, and how to convert lessons into action items.
 
 ## Documents
 
-- [Project Management Overview](docs/octoacme-project-management-overview.md)
-- [Project Initiation Guide](docs/octoacme-project-initiation.md)
-- [Project Planning](docs/octoacme-project-planning.md)
-- [Execution & Tracking](docs/octoacme-execution-and-tracking.md)
-- [Risk Management & Communication](docs/octoacme-risks-and-communication.md)
-- [Release & Deployment Guide](docs/octoacme-release-and-deployment.md)
-- [Retrospective & Continuous Improvement](docs/octoacme-retrospective-and-continuous-improvement.md)
-- [Roles & Personas](docs/octoacme-roles-and-personas.md)
+- [Project Management Overview](./octoacme-project-management-overview.md)
+- [Project Initiation Guide](./octoacme-project-initiation.md)
+- [Project Planning](./octoacme-project-planning.md)
+- [Execution & Tracking](./octoacme-execution-and-tracking.md)
+- [Risk Management & Communication](./octoacme-risks-and-communication.md)
+- [Release & Deployment Guide](./octoacme-release-and-deployment.md)
+- [Retrospective & Continuous Improvement](./octoacme-retrospective-and-continuous-improvement.md)
+- [Roles & Personas](./octoacme-roles-and-personas.md)
 
 ## How to use
 
-- Link this README from the project root or main README to make process docs discoverable.
-- When updating a process doc, open a PR that references this README and use the 'Add Content to Project Management Process Docs' issue template (`.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml`).
+- Use this index to quickly locate the OctoAcme project management guidance for a specific phase or topic.
+- Keep linked documents in sync when project processes evolve or new practices are adopted.
+- When updating a process doc, open a PR that references this README and the related issue template for project management documentation updates.
 
-## Acceptance Criteria
+## Core roles and communication model
 
-- [x] Content aligns with existing process docs
-- [x] Update improves clarity or closes a documented gap
-- [ ] Proposed content has been reviewed with stakeholders (if needed)
+The process relies on clearly defined roles and responsibilities across the delivery system. Project Managers coordinate schedules, risks, communication, and documentation; Product Managers define outcomes, prioritize the backlog, and measure value; Developers build, test, and review features; QA/testing validates the acceptance criteria and quality standards; and stakeholders provide input, approval, and strategic alignment. Communication is intentionally regular and transparent: daily standups focus on blockers and progress, weekly syncs review execution, demos review milestone outcomes, and stakeholder updates keep broader audiences informed. Escalation paths are also defined so that issues can move from team-level resolution to project leadership or sponsor-level intervention when business-impacting risks require it.
+
+## Quality assurance and continuous improvement
+
+Quality is treated as a project discipline rather than an afterthought. The documentation requires acceptance criteria, PR review, CI validation, security scanning, and test coverage for new logic, with integration and smoke tests for critical flows before release. Teams maintain operational readiness through deployment checklists, rollback plans, and post-deploy verification. After each sprint, release, or major milestone, the team runs a retrospective to surface wins, identify improvements, and assign owners, due dates, and success criteria for follow-up actions. This creates a repeatable pattern of delivery, review, and refinement that supports both execution quality and ongoing process improvement.
